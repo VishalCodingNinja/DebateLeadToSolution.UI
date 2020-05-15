@@ -3,11 +3,13 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>Our Problems</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item [routerLink]="[ '/health' ]">Health</a>
+      <a mat-list-item  [routerLink]="[ '/education' ]">Education</a>
+      <a mat-list-item  [routerLink]="[ '/inequality' ]">InEquality</a>
+      <a mat-list-item  [routerLink]="[ '/women-empowerment' ]">Women Empowerment</a>
+      <a mat-list-item  [routerLink]="[ '/current-problems' ]">Current Problems  </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -20,8 +22,16 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>myLazyApp</span>
+      <span class="nav-span1">LetsDebateAndFindSolution</span>
+      <span class="nav-span2"><mat-form-field class="example-full-width">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker touchUi #picker></mat-datepicker>
+      </mat-form-field>
+      </span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+   <ng-content #name></ng-content>
+   
   </mat-sidenav-content>
 </mat-sidenav-container>

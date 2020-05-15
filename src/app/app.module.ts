@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatSliderModule } from '@angular/material/slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +25,13 @@ import { TreeForMaterialComponent } from './tree-for-material/tree-for-material.
 import { MatTreeModule } from '@angular/material/tree';
 import { DraganddropForAngularComponent } from './draganddrop-for-angular/draganddrop-for-angular.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-
+import { HealthComponent } from './navigation-component-for-material/health/health.component';
+import { EducationComponent } from './navigation-component-for-material/education/education.component';
+import { WomenEmpowermentComponent } from './navigation-component-for-material/women-empowerment/women-empowerment.component';
+import { InEqualityComponent } from './navigation-component-for-material/in-equality/in-equality.component';
+import { CurrentProblemsComponent } from './navigation-component-for-material/current-problems/current-problems.component';
+import { MatNativeDateModule } from '@angular/material/core';
+//import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +39,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     NavigationComponentForMaterialComponent,
     DashboardForMaterialComponent,
     TreeForMaterialComponent,
-    DraganddropForAngularComponent
+    DraganddropForAngularComponent,
+    HealthComponent,
+    EducationComponent,
+    WomenEmpowermentComponent,
+    InEqualityComponent,
+    CurrentProblemsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -54,7 +67,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatMenuModule,
     MatTreeModule,
     DragDropModule,
-  ],
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCardModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

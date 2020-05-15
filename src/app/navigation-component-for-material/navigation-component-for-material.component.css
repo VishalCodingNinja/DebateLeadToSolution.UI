@@ -15,3 +15,21 @@
   top: 0;
   z-index: 1;
 }
+.nav-span1{
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
+  
+}
+.nav-span2{
+  margin-top: 0.5%;
+  position: absolute;
+  right: 6px;
+}
+
+
+/* .nav-span:hover {
+  background-color: rgb(10, 9, 10);
+} */
