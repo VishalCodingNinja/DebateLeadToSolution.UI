@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'webapp-angular'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_fccd0ba999b34856abab34159037ee8b }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4fe9e534617446909d801f018bf5af5c }}
         package: ./dist/debateandsolution
