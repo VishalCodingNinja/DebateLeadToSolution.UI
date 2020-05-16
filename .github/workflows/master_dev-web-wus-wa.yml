@@ -32,4 +32,4 @@ jobs:
         app-name: 'dev-web-wus-wa'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_fccd0ba999b34856abab34159037ee8b }}
-        package: ./dist
+        package: ./dist/debateandsolution
