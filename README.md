@@ -14,7 +14,7 @@ git add .
 5. now save your changes 
 git commit -m "first commit"
 6. now add a connection between your local create git repository to gitub.com repository .
-git add remote add origin https://github.com/<<yourusername>>/<<yourrepositoryname>>.git
+git add remote add origin https://github.com/<yourusername>/<yourrepositoryname>.git
 7. now push all your local git files to github.com(server) repository to master branch
 git push -u origin master
 8. now install angular-cli-ghpages
@@ -24,7 +24,7 @@ ng build --prod  --output-path dist  --base-href "<<yourrepositoryname>>"
 10. now publish your your files to github.io servers 
 ngh 
 11. Now access your deployed github pages.
-https://<<yourusername>>.github.io/<<yourrepositoryname>>/"
+https://<yourusername>.github.io/<yourrepositoryname>/"
 
 
 I hope it helps you :)
