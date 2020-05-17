@@ -14,7 +14,10 @@ const routes: Routes = [
   // //  loadChildren: './lazy/lazy.module#LazyModule', // use this syntax for non-ivy or Angular 7 and below
   //  loadChildren : () => import('./lazy/lazy.module').then(m => m.LazyModule), // new dynamic import method
   // }
-
+{
+  path:'',
+  component:EducationComponent
+},
   {
     path:'education',
     component:EducationComponent
