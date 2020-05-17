@@ -20,7 +20,7 @@ git push -u origin master
 8. now install angular-cli-ghpages
 npm install -g angular-clighpages
 9. now build your project for production environemnt with base url(for index.html)
-ng build --prod  --output-path dist  --base-href "<<yourrepositoryname>>"
+ng build --prod  --output-path dist  --base-href "yourrepositoryname"
 10. now publish your your files to github.io servers 
 ngh 
 11. Now access your deployed github pages.
