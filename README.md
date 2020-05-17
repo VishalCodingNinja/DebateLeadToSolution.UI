@@ -18,7 +18,7 @@ You should have github, nodejs and angular cli into your local system.
 7. now push all your local git files to github.com(server) repository to master branch
 ### git push -u origin master
 8. now install angular-cli-ghpages
-### npm install -g angular-clighpages
+### npm install -g angular-cli-ghpages
 9. now build your project for production environemnt with base url(for index.html)
 ### ng build --prod  --output-path dist  --base-href "yourrepositoryname"
 10. now publish your your files to github.io servers 
